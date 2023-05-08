@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /api
+
+orders:
+  queue:
+    name: ${SQS_NAME}
+
+cloud:
+  aws:
+    region: ${AWS_REGION}
+
+logging:
+  level:
+    com.arthurtira.sbs: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
